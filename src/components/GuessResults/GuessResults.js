@@ -10,7 +10,7 @@ function GuessResults({ guesses }) {
       {range(NUM_OF_GUESSES_ALLOWED).map((num) => (
         <Guess
           key={num}
-          value={guesses[num] ? guesses[num].label : undefined}
+          value={guesses[num] ? guesses[num].guess : undefined}
         />
       ))}
     </div>
